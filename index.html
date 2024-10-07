@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+    <title>Todos Flask App</title>
+</head>
+<body>
+    <h1>Task Manager App</h1>
+    <div class="content">
+        <form method="POST">
+            <p>
+                <b><label for="content">Task Content</label></b>
+            </p>
+            <p>
+                <input type="text" name="content" placeholder="add task...">
+            </p>
+            <p>
+                <b><label for="degree">Degree</label></b>
+            </p>
+            <p>
+                <input type="radio" id="degree-0" name="degree" value="important" required>
+                <label for="degree-0">Important</label>
+            </p>
+            <p></p>
+                <input type="radio" id="degree-1" name="degree" value="unimportant" required>
+                <label for="degree-1">Unimportant</label>
+            </p>
+            <button type="submit">Submit</button>  
+        </form>
+    </div>
+    
+</body>
+</html>
