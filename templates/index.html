@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+    <!--<link rel="stylesheet" href="static/styles.css">-->
     <title>Todos Flask App</title>
 </head>
 <body>
@@ -17,15 +18,19 @@
                 <input type="text" name="content" placeholder="add task...">
             </p>
             <p>
-                <b><label for="degree">Degree</label></b>
+                <b><label for="priority">Priority</label></b>
             </p>
             <p>
-                <input type="radio" id="degree-0" name="degree" value="important" required>
-                <label for="degree-0">Important</label>
+                <input type="radio" id="priority-0" name="priority" value="high" required>
+                <label for="priority-0">High</label>
             </p>
-            <p></p>
-                <input type="radio" id="degree-1" name="degree" value="unimportant" required>
-                <label for="degree-1">Unimportant</label>
+            <p>
+                <input type="radio" id="priority-1" name="priority" value="medium" required>
+                <label for="priority-1">Medium</label>
+            </p>
+            <p>
+                <input type="radio" id="priority-2" name="priority" value="low" required>
+                <label for="priority-2">Low</label>
             </p>
             <button type="submit">Submit</button>  
         </form>
