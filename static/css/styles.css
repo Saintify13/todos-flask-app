@@ -71,3 +71,7 @@ button:hover {
 .task p {
     margin: 0;
 }
+
+.task i {
+    color: #b6cbce;
+}

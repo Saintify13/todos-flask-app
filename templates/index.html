@@ -34,6 +34,13 @@
             </p>
             <button type="submit">Submit</button>  
         </form>
+        <hr>
+        {% for task in tasks %}
+            <div class="task">
+                <p> {{ task['content'] }} <i>{{ task['priority'] }}</i>
+                </p>        
+            </div>
+        {% endfor %}    
     </div>
     
 </body>
